@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://kit.fontawesome.com/337f25ab8d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/dashboard.js"></script>
+    <title>Victims</title>
+</head>
+
+    
+
+<body class="bg-[#131421] select-none">
+        <div class=" bg-[#191a29] text-white h-20 flex items-center  font-sans text-4xl pl-2 rounded mt-2 ml-2 mr-2">
+        <span>>C2 Server</span>
+        </div>
+        <!-- Sidebar -->
+        <div class="flex h-[calc(100vh-10vh)] font-sans ">
+
+            <div class="w-64  space-y-3 bg-[#191a29] text-white px-2 py-4 rounded mt-2 ml-2 mb-2">
+                
+                <a href="index.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                
+                
+                
+                <a href="victims.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-skull"></i>
+                    <span>Victims</span>
+                </a>
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Tasks</span>
+                </a>
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Builder</span>
+                </a>
+                
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Interface Servers</span>
+                </a>
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>FAQ</span>
+                </a>
+                
+            </div>
+            
+            <!-- Contenu principal -->
+            <div class="flex-1 p-4 overflow-auto font-sans py-10">
+                <h1 class="text-white text-6xl font-medium">Dashboard</h1>
+                <div>
+                    <h3 class="text-gray-500 text-2xl">Welcome back, Guilhem.</h3>
+                </div>
+
+                <div class="p-2 justify-around h-26 flex 
+                items-start 
+                ">
+
+                <div class="bg-gray-800 hover:scale-95 transition-transform duration-300 rounded-lg ml-5 py-4 w-72 h-96  shadow-2xl shadow-gray-800 flex justify-center items-center flex-col">
+                  
+                    <div class="flex items-center  flex-col">
+                      <span class="text-white text-7xl block" id="lastVictims">73</span>
+  
+                    </div>
+                    <span class="text-gray-500 text-2xl block  text-center p-2 mt-10">New victims in the lasts 24 hours</span>
+
+
+                </div>
+                  <!-- <span class="text-gray-400"><i class="fa-solid fa-arrow-right"></i></span> -->
+                
+                
+                
+                <div class="bg-gray-800 hover:scale-95 transition-transform duration-300 rounded-lg ml-5 py-4 w-72 h-96 flex justify-center items-center flex-col shadow-2xl shadow-gray-800 ">
+                  <div class="flex items-center  flex-col">
+                    <span class="text-white text-7xl block" id="latency">109ms</span>
+
+                  </div>
+                  <span class="text-gray-500 text-2xl block  text-center p-2 mt-10">Average latency</span>
+                </div>
+                
+                
+                <div class="bg-gray-800 hover:scale-95 transition-transform duration-300 rounded-lg ml-5 py-4 w-72 h-96 flex justify-center items-center flex-col shadow-2xl shadow-gray-800 ">
+                  <div class="flex items-center  flex-col">
+                    <span class="text-white text-7xl block" id="tasks">0</span>
+
+                  </div>
+                  <span class="text-gray-500 text-2xl block  text-center p-2 mt-10">Active tasks</span>
+                </div>
+                
+                
+                <div class="bg-gray-800 hover:scale-95 transition-transform duration-300 rounded-lg ml-5 py-4 w-72 h-96 flex justify-center items-center flex-col shadow-2xl shadow-gray-800 ">
+                  <div class="flex items-center  flex-col">
+                    <span class="text-white text-7xl block" id="intServ">8</span>
+
+                  </div>
+                  <span class="text-gray-500 text-2xl block  text-center p-2 mt-10">Active interface servers</span>
+                </div>
+                
+
+
+
+              </div>
+    
+        <script src="js/chart.js"></script>
+    </body>
+    </html>
+    

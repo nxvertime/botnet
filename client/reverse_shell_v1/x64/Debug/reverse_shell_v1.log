@@ -1,0 +1,3 @@
+﻿  reverse_shell_v1.cpp
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(70,45): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+  reverse_shell_v1.vcxproj -> C:\Users\never\source\repos\reverse_shell_v1\x64\Debug\reverse_shell_v1.exe

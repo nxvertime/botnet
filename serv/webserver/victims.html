@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://kit.fontawesome.com/337f25ab8d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <title>Victims</title>
+</head>
+
+    
+
+<body class="bg-[#131421] select-none overflow-hidden">
+        <div class=" bg-[#191a29] text-white h-20 flex items-center  font-sans text-4xl pl-2 rounded mt-2 ml-2 mr-2">
+        <span>>C2 Server</span>
+        </div>
+        <!-- Sidebar -->
+        <div class="flex h-[calc(100vh-10vh)] font-sans ">
+
+            <div class="w-64  space-y-3 bg-[#191a29] text-white px-2 py-4 rounded mt-2 ml-2 mb-2">
+                
+                <a href="index.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+                
+                
+                
+                <a href="victims.html" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-skull"></i>
+                    <span>Victims</span>
+                </a>
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Tasks</span>
+                </a>
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-gears"></i>
+                    <span>Builder</span>
+                </a>
+                
+                
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-server"></i>
+                    <span>Interface Servers</span>
+                </a>
+                
+                <a href="#" class="block py-2.5 px-4 rounded transition duration-200 hover:bg-gray-700">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>FAQ</span>
+                </a>
+                
+            </div>
+            
+            <!-- Contenu principal -->
+            <div class="flex-1 p-4 overflow-auto font-sans py-10 hide-scrollbar">
+                <h1 class="text-white md:text-4xl lg:text-6xl font-medium">Victims</h1>
+                <div>
+                    <div id="area-chart"></div>
+                </div>
+                <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-10 w-full ">
+                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                        <caption class="p-5 lg:text-lg font-semibold text-left rtl:text-right text-gray-900 bg-white dark:text-white dark:bg-gray-800">
+                            Victims List
+                            <p class="mt-1 lg:text-sm font-normal text-gray-500 dark:text-gray-400">Browse the victim list, get informations, get a screenshare or a remote shell, it's as you want :)</p>
+                        </caption>
+                        <thead class="lg:text-xs md:text-xs/[0.4] text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400 ">
+                            <tr>
+                                <th scope="col" class="px-6 py-3 text-center align-middle w-100">
+                                    Select
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Computer name
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    IP address
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Port
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Country
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Last connection
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Status
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Remote shell
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    Screenshare
+                                </th>
+                                <th scope="col" class="px-6 py-3 text-center align-middle">
+                                    <span class="sr-only">Edit</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 w-10 ">
+                                    <div class="flex h-auto justify-center items-center">
+                                        
+                                        <input type="checkbox" name="" id="" class="">
+                                    </div>
+                                    
+                                </td>
+                                <th scope="row" class=" text-center align-middle px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Jame's Laptop
+                                </th>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    192.168.102.20
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    4444
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle flex h-auto justify-center items-center">
+                                    <img src="https://flagsapi.com/FR/flat/32.png" alt="" srcset=""> 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    21/03/2024 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    🟢Connected
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-display"></i>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-right text-center align-middle ">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                            
+
+
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 w-10 ">
+                                    <div class="flex h-auto justify-center items-center">
+                                        
+                                        <input type="checkbox" name="" id="" class="">
+                                    </div>
+                                    
+                                </td>
+                                <th scope="row" class=" text-center align-middle px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Titouan HP
+                                </th>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    212.152.12.33
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    4444
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle flex h-auto justify-center items-center">
+                                    <img src="https://flagsapi.com/FR/flat/32.png" alt="" srcset=""> 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    22/03/2024 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    🟢Connected
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-display"></i>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-right text-center align-middle ">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+
+
+
+
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 w-10 ">
+                                    <div class="flex h-auto justify-center items-center">
+                                        
+                                        <input type="checkbox" name="" id="" class="">
+                                    </div>
+                                    
+                                </td>
+                                <th scope="row" class=" text-center align-middle px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    Jean Broyeur
+                                </th>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    192.168.102.58
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    4444
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle flex h-auto justify-center items-center">
+                                    <img src="https://flagsapi.com/FR/flat/32.png" alt="" srcset=""> 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    21/02/2024 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    🟢Connected
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-display"></i>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-right text-center align-middle ">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+
+
+
+
+
+                            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                                <td class="px-6 py-4 w-10 ">
+                                    <div class="flex h-auto justify-center items-center">
+                                        
+                                        <input type="checkbox" name="" id="" class="">
+                                    </div>
+                                    
+                                </td>
+                                <th scope="row" class=" text-center align-middle px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                    HJeune Crack
+                                </th>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    192.168.22.155
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    4444
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle flex h-auto justify-center items-center">
+                                    <img src="https://flagsapi.com/FR/flat/32.png" alt="" srcset=""> 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    15/01/2024 
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    🔴Disconnected
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-terminal"></i>
+                                </td>
+                                <td class="px-6 py-4 text-center align-middle ">
+                                    <i class="fa-solid fa-display"></i>
+                                </td>
+                                
+                                <td class="px-6 py-4 text-right text-center align-middle ">
+                                    <a href="#" class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+    
+        <script src="js/chart.js"></script>
+    </body>
+    </html>
+    

@@ -1,0 +1,20 @@
+﻿  reverse_shell_v1.cpp
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.h(19,25): error C2065: 'string' : identificateur non déclaré
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.h(19,18): error C7568: liste d'arguments manquante après le modèle de fonction supposé 'vector'
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(141,45): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(240,21): error C2131: l'expression n'a pas été évaluée en constante
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(240,21): message : échec en raison de l'appel d'une fonction indéfinie ou 'constexpr' non déclarée
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(240,21): message : voir l'utilisation de 'str2int'
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(243,73): warning C4267: 'argument' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(247,21): error C2131: l'expression n'a pas été évaluée en constante
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(247,21): message : échec en raison de l'appel d'une fonction indéfinie ou 'constexpr' non déclarée
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(247,21): message : voir l'utilisation de 'str2int'
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(250,24): warning C4267: 'initialisation' : conversion de 'size_t' en 'int', perte possible de données
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(240,9): error C2051: l'expression associée à case n'est pas une constante
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(247,9): error C2051: l'expression associée à case n'est pas une constante
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\reverse_shell_v1.cpp(274,9): warning C4060: l'instruction switch ne contient aucune étiquette 'case' ou 'default'
+  utils.cpp
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.h(19,25): error C2065: 'string' : identificateur non déclaré
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.h(19,18): error C7568: liste d'arguments manquante après le modèle de fonction supposé 'vector'
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.cpp(20,38): error C2572: 'str2int' : redéfinition de l'argument par défaut : paramètre 1
+C:\Users\never\source\repos\reverse_shell_v1\reverse_shell_v1\utils.h(17,5): message : voir la déclaration de 'str2int'
